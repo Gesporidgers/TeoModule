@@ -1,14 +1,14 @@
-def numsysCon(a, s):
+def numsysCon(number, system):
     result = ''
-    while a != 0:
-        t = str(a % s)
+    while number != 0:
+        t = str(number % system)
         result = t + result
-        a = a // s
+        a = number // system
     return result
 
 
-def zeronumber(a, s):
-    t = numsysCon(a, s)
+def zeronumber(number, system):
+    t = numsysCon(number, system)
     return t.count('0')
 
 
